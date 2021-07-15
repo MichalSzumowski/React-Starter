@@ -44,7 +44,7 @@ class List extends React.Component {
   render() {
     return (
       <section className={styles.component}>
-        <Hero titleText={this.props.title} srcText={this.props.srcTitle}/>
+        <Hero titleText={this.props.title} srcText={this.props.image}/>
         
         <div className={styles.columns}>
           {this.state.columns.map(({key, ...columnProps}) => (

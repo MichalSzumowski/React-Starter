@@ -10,7 +10,7 @@ import { listData } from '../../data/dataStore';
 const Hero = props => (
     <header className={styles.component}>
       <h2 className={styles.title}>{ReactHtmlParser(props.titleText)}</h2>
-      <img src={listData.image} alt="alt" className={styles.image} />
+      <img src={props.srcText} alt="alt" className={styles.image} />
     </header>
   );
   
