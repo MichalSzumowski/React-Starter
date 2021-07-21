@@ -1,5 +1,3 @@
-const test = "35353"
-
 import React from 'react';
 import './styles/normalize.scss';
 import './styles/global.scss';
