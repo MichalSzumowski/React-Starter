@@ -1,0 +1,53 @@
+$ heroku logs --tail
+2021-07-25T20:01:08.222567+00:00 app[api]: Release v1 created by user mic.szumowski@gmail.com
+2021-07-25T20:01:08.222567+00:00 app[api]: Initial release by user mic.szumowski@gmail.com
+2021-07-25T20:01:10.042819+00:00 app[api]: Enable Logplex by user mic.szumowski@gmail.com
+2021-07-25T20:01:10.042819+00:00 app[api]: Release v2 created by user mic.szumowski@gmail.com
+2021-07-25T20:01:41.000000+00:00 app[api]: Build started by user mic.szumowski@gmail.com
+2021-07-25T20:02:54.692354+00:00 app[api]: Deploy 6b9a7261 by user mic.szumowski@gmail.com
+2021-07-25T20:02:54.692354+00:00 app[api]: Release v3 created by user mic.szumowski@gmail.com
+2021-07-25T20:02:54.705688+00:00 app[api]: Scaled to web@1:Free by user mic.szumowski@gmail.com
+2021-07-25T20:02:57.822517+00:00 heroku[web.1]: Starting process with command `npm start`
+2021-07-25T20:03:00.426988+00:00 app[web.1]:
+2021-07-25T20:03:00.427010+00:00 app[web.1]: > react-to-do@1.0.0 start /app
+2021-07-25T20:03:00.427011+00:00 app[web.1]: > webpack-dev-server --mode development --open --hot
+2021-07-25T20:03:00.427012+00:00 app[web.1]:
+2021-07-25T20:03:00.434662+00:00 app[web.1]: sh: 1: webpack-dev-server: not found
+2021-07-25T20:03:00.441497+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2021-07-25T20:03:00.441867+00:00 app[web.1]: npm ERR! syscall spawn
+2021-07-25T20:03:00.442092+00:00 app[web.1]: npm ERR! file sh
+2021-07-25T20:03:00.442348+00:00 app[web.1]: npm ERR! errno ENOENT
+2021-07-25T20:03:00.448023+00:00 app[web.1]: npm ERR! react-to-do@1.0.0 start: `webpack-dev-server --mode development --open --hot`
+2021-07-25T20:03:00.448168+00:00 app[web.1]: npm ERR! spawn ENOENT
+2021-07-25T20:03:00.448330+00:00 app[web.1]: npm ERR!
+2021-07-25T20:03:00.448487+00:00 app[web.1]: npm ERR! Failed at the react-to-do@1.0.0 start script.
+2021-07-25T20:03:00.448654+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2021-07-25T20:03:00.453068+00:00 app[web.1]:
+2021-07-25T20:03:00.453268+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2021-07-25T20:03:00.453454+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2021-07-25T20_03_00_449Z-debug.log
+2021-07-25T20:03:00.503540+00:00 heroku[web.1]: Process exited with status 1
+2021-07-25T20:03:00.668180+00:00 heroku[web.1]: State changed from starting to crashed
+2021-07-25T20:03:00.689840+00:00 heroku[web.1]: State changed from crashed to starting
+2021-07-25T20:03:03.000000+00:00 app[api]: Build succeeded
+2021-07-25T20:03:03.160038+00:00 heroku[web.1]: Starting process with command `npm start`
+2021-07-25T20:03:05.433658+00:00 app[web.1]:
+2021-07-25T20:03:05.433678+00:00 app[web.1]: > react-to-do@1.0.0 start /app
+2021-07-25T20:03:05.433679+00:00 app[web.1]: > webpack-dev-server --mode development --open --hot
+2021-07-25T20:03:05.433679+00:00 app[web.1]:
+2021-07-25T20:03:05.437941+00:00 app[web.1]: sh: 1: webpack-dev-server: not found
+2021-07-25T20:03:05.444675+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2021-07-25T20:03:05.445029+00:00 app[web.1]: npm ERR! syscall spawn
+2021-07-25T20:03:05.445194+00:00 app[web.1]: npm ERR! file sh
+2021-07-25T20:03:05.445402+00:00 app[web.1]: npm ERR! errno ENOENT
+2021-07-25T20:03:05.450708+00:00 app[web.1]: npm ERR! react-to-do@1.0.0 start: `webpack-dev-server --mode development --open --hot`
+2021-07-25T20:03:05.450946+00:00 app[web.1]: npm ERR! spawn ENOENT
+2021-07-25T20:03:05.451081+00:00 app[web.1]: npm ERR!
+2021-07-25T20:03:05.451194+00:00 app[web.1]: npm ERR! Failed at the react-to-do@1.0.0 start script.
+2021-07-25T20:03:05.451278+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2021-07-25T20:03:05.459167+00:00 app[web.1]:
+2021-07-25T20:03:05.459361+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2021-07-25T20:03:05.459440+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2021-07-25T20_03_05_452Z-debug.log
+2021-07-25T20:03:05.537497+00:00 heroku[web.1]: Process exited with status 1
+2021-07-25T20:03:05.608983+00:00 heroku[web.1]: State changed from starting to crashed
+2021-07-25T20:03:13.244953+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=evening-springs-83439.herokuapp.com request_id=4f2217db-3b03-4820-90e4-27b5b3eec550 fwd="89.64.114.247" dyno= connect= service= status=503 bytes= protocol=https
+2021-07-25T20:03:13.599809+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=evening-springs-83439.herokuapp.com request_id=0eecdc85-8c87-4b35-b5a7-e413159cde99 fwd="89.64.114.247" dyno= connect= service= status=503 bytes= protocol=https

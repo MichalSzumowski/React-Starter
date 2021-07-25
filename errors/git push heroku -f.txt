@@ -1,0 +1,197 @@
+$ git push heroku -f
+Enumerating objects: 203, done.
+Counting objects: 100% (203/203), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (186/186), done.
+Writing objects: 100% (203/203), 307.42 KiB | 3.07 MiB/s, done.
+Total 203 (delta 82), reused 3 (delta 0), pack-reused 0
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Building on the Heroku-20 stack
+remote: -----> Determining which buildpack to use for this app
+remote: -----> Node.js app detected
+remote:
+remote: -----> Creating runtime environment
+remote:
+remote:        NPM_CONFIG_LOGLEVEL=error
+remote:        NODE_VERBOSE=false
+remote:        NODE_ENV=production
+remote:        NODE_MODULES_CACHE=true
+remote:
+remote: -----> Installing binaries
+remote:        engines.node (package.json):  unspecified
+remote:        engines.npm (package.json):   unspecified (use default)
+remote:
+remote:        Resolving node version 14.x...
+remote:        Downloading and installing node 14.17.3...
+remote:        Using default npm version: 6.14.13
+remote:
+remote: -----> Installing dependencies
+remote:        Installing node modules
+remote:
+remote:        > fsevents@1.2.13 install /tmp/build_5f8a837f/node_modules/webpack-dev-server/node_modules/fsevents
+remote:        > node install.js
+remote:
+remote:
+remote:        Skipping 'fsevents' build as platform linux is not supported
+remote:
+remote:        > fsevents@1.2.13 install /tmp/build_5f8a837f/node_modules/watchpack-chokidar2/node_modules/fsevents
+remote:        > node install.js
+remote:
+remote:
+remote:        Skipping 'fsevents' build as platform linux is not supported
+remote:
+remote:        > node-sass@4.14.1 install /tmp/build_5f8a837f/node_modules/node-sass
+remote:        > node scripts/install.js
+remote:
+remote:        Downloading binary from https://github.com/sass/node-sass/releases/download/v4.14.1/linux-x64-83_binding.node
+remote:        Download complete
+remote:        Binary saved to /tmp/build_5f8a837f/node_modules/node-sass/vendor/linux-x64-83/binding.node
+remote:        Caching binary to /tmp/npmcache.Ca9Te/_cacache/node-sass/4.14.1/linux-x64-83_binding.node
+remote:
+remote:        > node-sass@4.14.1 postinstall /tmp/build_5f8a837f/node_modules/node-sass
+remote:        > node scripts/build.js
+remote:
+remote:        Binary found at /tmp/build_5f8a837f/node_modules/node-sass/vendor/linux-x64-83/binding.node
+remote:        Testing binary
+remote:        Binary is fine
+remote:
+remote:        > husky@4.3.0 install /tmp/build_5f8a837f/node_modules/husky
+remote:        > node husky install
+remote:
+remote:        husky > Setting up git hooks
+remote:        fatal: not a git repository (or any parent up to mount point /)
+remote:        Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+remote:        husky > Failed to install
+remote:
+remote:        > husky@4.3.0 postinstall /tmp/build_5f8a837f/node_modules/husky
+remote:        > opencollective-postinstall || exit 0
+remote:
+remote:        added 1195 packages in 17.98s
+remote:
+remote: -----> Build
+remote:        Running build
+remote:
+remote:        > react-to-do@1.0.0 build /tmp/build_5f8a837f
+remote:        > webpack --mode production
+remote:
+remote:        Hash: 22c37fb39bfc17ae969b
+remote:        Version: webpack 4.46.0
+remote:        Time: 10439ms
+remote:        Built at: 07/25/2021 8:02:17 PM
+remote:                             Asset       Size  Chunks                          Chunk Names
+remote:                        index.html  600 bytes          [emitted]
+remote:                 scripts_bundle.js    326 KiB       0  [emitted]        [big]  main
+remote:             scripts_bundle.js.map    768 KiB       0  [emitted] [dev]         main
+remote:            styles_bundle_main.css   4.94 KiB       0  [emitted]               main
+remote:        styles_bundle_main.css.map   6.98 KiB       0  [emitted] [dev]         main
+remote:        Entrypoint main [big] = styles_bundle_main.css scripts_bundle.js styles_bundle_main.css.map scripts_bundle.js.map
+remote:        [23] (webpack)/buildin/global.js 472 bytes {0} [built]
+remote:        [40] ./src/styles/normalize.scss 39 bytes {0} [built]
+remote:        [41] ./src/styles/global.scss 39 bytes {0} [built]
+remote:        [48] (webpack)/buildin/harmony-module.js 573 bytes {0} [built]
+remote:        [73] readable-stream (ignored) 15 bytes {0} [built]
+remote:        [99] ./src/index.js + 42 modules 114 KiB {0} [built]
+remote:             | ./src/index.js 469 bytes [built]
+remote:             | ./src/redux/store.js 1.15 KiB [built]
+remote:             | ./src/data/dataStore.js 3.4 KiB [built]
+remote:             | ./src/redux/cardsRedux.js 3.5 KiB [built]
+remote:             | ./src/redux/columnsRedux.js 3.43 KiB [built]
+remote:             | ./src/redux/searchStringRedux.js 1.19 KiB [built]
+remote:             |     + 37 hidden modules
+remote:            + 105 hidden modules
+remote:
+remote:        WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+remote:        This can impact web performance.
+remote:        Assets:
+remote:          scripts_bundle.js (326 KiB)
+remote:
+remote:        WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+remote:        Entrypoints:
+remote:          main (331 KiB)
+remote:              styles_bundle_main.css
+remote:              scripts_bundle.js
+remote:
+remote:
+remote:        WARNING in webpack performance recommendations:
+remote:        You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+remote:        For more info visit https://webpack.js.org/guides/code-splitting/
+remote:        Child html-webpack-plugin for "index.html":
+remote:             1 asset
+remote:            Entrypoint undefined = index.html
+remote:            [0] ./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html 693 bytes {0} [built]
+remote:            [2] (webpack)/buildin/global.js 472 bytes {0} [built]
+remote:            [3] (webpack)/buildin/module.js 497 bytes {0} [built]
+remote:                + 1 hidden module
+remote:        Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/sass-loader/dist/cjs.js!src/components/App/App.scss:
+remote:            Entrypoint mini-css-extract-plugin = *
+remote:               2 modules
+remote:        Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/sass-loader/dist/cjs.js!src/components/Button/Button.scss:
+remote:            Entrypoint mini-css-extract-plugin = *
+remote:               2 modules
+remote:        Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/sass-loader/dist/cjs.js!src/components/Card/Card.scss:
+remote:            Entrypoint mini-css-extract-plugin = *
+remote:               2 modules
+remote:        Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/sass-loader/dist/cjs.js!src/components/Column/Column.scss:
+remote:            Entrypoint mini-css-extract-plugin = *
+remote:               2 modules
+remote:        Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/sass-loader/dist/cjs.js!src/components/Creator/Creator.scss:
+remote:            Entrypoint mini-css-extract-plugin = *
+remote:               2 modules
+remote:        Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/sass-loader/dist/cjs.js!src/components/Hero/Hero.scss:
+remote:            Entrypoint mini-css-extract-plugin = *
+remote:               2 modules
+remote:        Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/sass-loader/dist/cjs.js!src/components/List/List.scss:
+remote:            Entrypoint mini-css-extract-plugin = *
+remote:               2 modules
+remote:        Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/sass-loader/dist/cjs.js!src/components/Search/Search.scss:
+remote:            Entrypoint mini-css-extract-plugin = *
+remote:               2 modules
+remote:        Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/sass-loader/dist/cjs.js!src/styles/global.scss:
+remote:            Entrypoint mini-css-extract-plugin = *
+remote:            [0] ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/sass-loader/dist/cjs.js!./src/styles/global.scss 509 bytes {0} [built]
+remote:                + 1 hidden module
+remote:        Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/sass-loader/dist/cjs.js!src/styles/normalize.scss:
+remote:            Entrypoint mini-css-extract-plugin = *
+remote:            [0] ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/sass-loader/dist/cjs.js!./src/styles/normalize.scss 1.98 KiB {0} [built]
+remote:                + 1 hidden module
+remote:
+remote: -----> Caching build
+remote:        - node_modules
+remote:
+remote: -----> Pruning devDependencies
+remote:
+remote:        > husky@4.3.0 preuninstall node_modules/husky
+remote:        > node husky uninstall
+remote:
+remote:        husky > Uninstalling git hooks
+remote:        fatal: not a git repository (or any parent up to mount point /)
+remote:        Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+remote:        husky > Failed to uninstall
+remote:        removed 1159 packages and audited 31 packages in 12.276s
+remote:
+remote:        2 packages are looking for funding
+remote:          run `npm fund` for details
+remote:
+remote:        found 0 vulnerabilities
+remote:
+remote:
+remote: -----> Build succeeded!
+remote: -----> Discovering process types
+remote:
+remote:  ~     Mis-cased procfile detected; ignoring.
+remote:  ~     Rename it to Procfile to have it honored.
+remote:
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 35.1M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://evening-springs-83439.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/evening-springs-83439.git
+ * [new branch]      main -> main
