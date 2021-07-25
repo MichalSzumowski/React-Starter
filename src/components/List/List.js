@@ -29,7 +29,11 @@ class List extends React.Component {
 
     return (
       <section className={styles.component}>
-               
+        <Hero titleText={title} image={image} />
+        <div className={styles.description}>
+          {ReactHtmlParser(description)}
+        </div>
+
         <div className={styles.columns}>
           {columns.map(columnData => (
             <Column key={columnData.id} {...columnData} />
@@ -40,10 +44,7 @@ class List extends React.Component {
           <Creator text={settings.columnCreatorText} action={addColumn} />
         </div>  
                 
-        <Hero titleText={title} image={image} />
-        <div className={styles.description}>
-          {ReactHtmlParser(description)}
-        </div>
+
 
 
       </section>
