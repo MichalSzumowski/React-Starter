@@ -1,4 +1,7 @@
 export const settings = {
+  header: {
+    Icon: 'pastafarianism',
+  },
   columnCreatorText: 'Add new column',
   cardCreatorText: 'Add new card',
   creator: {
@@ -140,6 +143,21 @@ const cards = [
     title: 'Skyrim',
   },
 ];
+
+export const faqPage = {
+  title: 'FAQ',
+  image: 'https://help.classter.com/wp-content/uploads/2020/02/faq-icon-large-sign-hd-png.png',
+  content: 'Frequently Asked Questions',
+};
+
+export const infoPage = {
+  title: 'Info',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  content: 'Info, onfo and intro',
+};
+
+
+
 
 const initialStoreData = {
   app: {...pageContents},
